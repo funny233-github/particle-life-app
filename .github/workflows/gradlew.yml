@@ -14,4 +14,8 @@ jobs:
         with:
           distribution: 'oracle'
           java-version: '17'
+      - uses: SimonMarquis/ci-gradle-properties-action@v1
+        with:
+          path: .github/gradle.properties
       - run: java --version
+      - run: gradle -v
