@@ -9,8 +9,6 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
-      - name: show
-        run: ls -a
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
         with:
@@ -25,8 +23,6 @@ jobs:
           export PATH=$PATH:$GRADLE_HOME/bin
       - name: build
         run: gradle bulid
-      - name: show
-        run: ls -a
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
