@@ -3,7 +3,7 @@ name: gradlew
 on:
   push:
     branches:
-      - workflows
+      - workflow
 
 jobs:
   test-job:
