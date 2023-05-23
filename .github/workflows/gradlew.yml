@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install glfw
-        run: apt-get install --no-install-recommends -y libgl1-mesa-dev libglfw3-dev libglfw3
+        run: sudo apt-get install --no-install-recommends -y libgl1-mesa-dev libglfw3-dev libglfw3
       - name: show
         run: ls -a
       - uses: actions/checkout@v3
