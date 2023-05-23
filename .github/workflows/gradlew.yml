@@ -28,13 +28,7 @@ jobs:
           export PATH=$PATH:$GRADLE_HOME/bin
       - name: build
         run: |
-          ./gradlew run
-          ls -a
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-artifacts
-          path: src/*
+          ./gradlew zipApp
       - name: tags
         run: |
           git tag v1.0.0
