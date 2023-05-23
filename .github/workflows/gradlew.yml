@@ -25,7 +25,7 @@ jobs:
           export PATH=$PATH:$GRADLE_HOME/bin
       - name: build
         run: |
-          gradle build
+          ./gradlew run
           ls -a
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
